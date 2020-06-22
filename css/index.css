@@ -1,0 +1,183 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.header {
+	height: 70px;
+	background-color: #354457;
+	line-height: 70px;
+}
+
+.logo {
+	padding-left: 20px;
+	color: #b3bcc5;
+	font-size: 14px;
+}
+
+.logo img {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+}
+
+.left-menu {
+	float: left;
+	width: 200px;
+	height: calc(100% - 70px);
+	background-color: #4d5e70;
+}
+
+.right-content {
+	float: left;
+	width: calc(100% - 200px);
+	height: calc(100% - 70px);
+	background-color: #eeeeee;
+	position: relative;
+}
+
+.right-content>div {
+	display: none;
+}
+
+.right-content>div.active {
+	display: block;
+}
+
+.left-menu dl dt,
+.left-menu dl dd {
+	height: 40px;
+	line-height: 40px;
+	color: #b3bcc5;
+	font-size: 14px;
+}
+
+.left-menu dl dd {
+	padding-left: 20px
+}
+
+.left-menu dl dt {
+	padding-left: 10px;
+}
+
+.left-menu dl dd:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+	color: #354457;
+}
+
+.left-menu dl dd.active {
+	background-color: #dddddd;
+	color: #354457;
+}
+
+.student-list table {
+	width: 100%;
+	text-align: center;
+}
+
+.student-list table thead {
+	background-color: #e3e8ee;
+	color: #000;
+	height: 34px;
+	line-height: 34px;
+}
+
+.student-list table tbody {
+	background-color: #fff;
+	line-height: 30px;
+}
+
+.btn {
+	border: none;
+	outline: none;
+	padding: 5px 10px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.btn.edit {
+	background-color: #5cb85c;
+}
+
+.btn.del {
+	background-color: #d9534f;
+}
+
+.turn-page {
+	text-align: center;
+}
+
+.turn-page .btn {
+	color: #354457;
+	background-color: #fff;
+}
+
+.student-list {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.student-add {
+	display: none;
+}
+
+form {
+	width: 400px;
+	margin: 50px auto;
+}
+
+form label {
+	width: 100px;
+	display: inline-block;
+	text-align: right;
+	margin-right: 10px;
+}
+
+form label.sex {
+	width: auto;
+}
+
+form div {
+	margin: 10px 0;
+}
+
+form .btn {
+	padding: 5px, 25px;
+	color: #354457;
+	background-color: rgba(240, 240, 240);
+	border: 1px solid #354457;
+}
+.modal{
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: fixed;
+	background-color: rgba(0,0,0,0.3);
+	display: none;
+}
+.modal .modelContent{
+	background-color: #FFFFFF;
+	padding: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 500px;
+	height: 450px;
+	margin-top: -225px;
+	margin-left: -250px;
+}
+.modal .modelContent .btn{
+	padding: 5px 60px;
+}
+.turn-page .btn{
+	display: none;
+}
